@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the entire page */
+body {
+  width: 100%;
+  height: 100dvh;
+  background-color: #121417; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main container for the rating card */
+#container {
+  font-family: sans-serif;
+  width: 420px;
+  height: 380px;
+  background-color: #1c1e24; 
+  color: white; 
+  border-radius: 20px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 35px;
+  gap: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+/* Circle background for the star icon */
+#star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;  
+  background-color: #272d34; 
+}
+
+/* Large, bold font for the question text */
+#question {
+  font-size: 28px;
+  font-weight: bold;
+  color: white; 
+}
+
+/* Subtext description */
+#text {
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+/* Container for rating buttons */
+#box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Style for each rating button */
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: #21272e;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  transition: 0.5s ease;
+}
+
+/* Change button color on hover */
+.circle:hover {
+  background-color: orange;
+  transform: scale(1.05);
+}
+
+/* Style for selected rating button */
+.select {
+  background-color: orange;
+}
+
+/* Style for the submit button */
+#submit {
+  width: 100%;
+  height: 45px;
+  background-color: orange;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.5s ease;
+  transition: 0.5s ease;
+}
+
+/* Hover effect for submit button */
+#submit:hover {
+  background-color: white;
+  color: orange;
+  transform: scale(1.01);
+}
+
+/* Style for the thank you section after submission */
+.thanking {
+  display: flex;
+  justify-content: center;
+}
+
+/* Feedback text container */
+.feedback {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  width: 340px;
+  font-size: 15px;
+}
+
+/* Style for displaying selected rating text */
+.rating {
+  font-size: 15px;
+  color: orange; 
+}
+
+/* Container for the rating text message */
+.div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 32px;
+  background-color: #262e38;
+  border-radius: 10px;
+  padding-top: 6px;
+  margin-top: 32px;
+  font-size: 15px;
+}
